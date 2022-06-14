@@ -51,7 +51,6 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-
     fun onEqual(view: View){
         if(lastNumeric){
             var tvValue = tvInput?.text.toString()
@@ -107,8 +106,6 @@ class MainActivity : AppCompatActivity() {
                     tvInput?.text = removeZeroAfterDot((one.toDouble() / two.toDouble()).toString())
                 }
 
-
-
             } catch (e: ArithmeticException) {
                 e.printStackTrace()
             }
@@ -135,5 +132,4 @@ class MainActivity : AppCompatActivity() {
                     || value.contains("-")
         }
     }
-
 }
